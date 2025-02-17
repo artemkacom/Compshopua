@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компшоп - Магазин комп'ютерів</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #6a1b9a; /* Фіолетовий колір */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 300px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product a {
+            text-decoration: none;
+            color: #6a1b9a; /* Фіолетовий колір */
+            font-weight: bold;
+        }
+
+        .details {
+            margin-top: 20px;
+        }
+
+        .details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .details ul li {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #6a1b9a; /* Фіолетовий колір */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .support-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .support-form input, .support-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .support-form button {
+            background-color: #6a1b9a; /* Фіолетовий колір */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .support-form button:hover {
+            background-color: #4a148c; /* Темніший фіолетовий */
+        }
+
+        .share-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .share-link input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .share-link button {
+            background-color: #6a1b9a; /* Фіолетовий колір */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .share-link button:hover {
+            background-color: #4a148c; /* Темніший фіолетовий */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Компшоп</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#products">Товари</a></li>
+                <li><a href="#contact">Контакти</a></li>
+                <li><a href="#support">Підтримка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Ласкаво просимо до Компшоп!</h2>
+        <p>Ми пропонуємо найкращі комп'ютери за доступними цінами. Наші товари — це висока якість, надійність та стильний дизайн.</p>
+        <!-- Тут можна додати зображення -->
+        <img src="шлях/до/зображення.jpg" alt="Головне зображення" style="max-width: 100%; height: auto; border-radius: 8px;">
+    </section>
+
+    <section id="products">
+        <h2>Наші товари</h2>
+        <div class="product-list">
+            <!-- Товар 1: Білий Дах -->
+            <div class="product">
+                <img src="file:///C:/Users/shumivodnik2.0/Downloads/Telegram%20Desktop/comp3.jpg" alt="Білий Дах">
+                <h3>Білий Дах</h3>
+                <p>Ціна: 27 500 грн</p>
+                <a href="#білий-дах">Детальніше</a>
+            </div>
+
+            <!-- Товар 2: Чорний Маг -->
+            <div class="product">
+                <img src="file:///C:/Users/shumivodnik2.0/Downloads/Telegram%20Desktop/compua22.jpg" alt="Чорний Маг">
+                <h3>Чорний Маг</h3>
+                <p>Ціна: 24 000 грн</p>
+                <a href="#чорний-маг">Детальніше</a>
+            </div>
+
+            <!-- Товар 3: Кубічний Акваріум -->
+            <div class="product">
+                <img src="file:///C:/Users/shumivodnik2.0/Downloads/Telegram%20Desktop/compua.jpg" alt="Кубічний Акваріум">
+                <h3>Кубічний Акваріум</h3>
+                <p>Ціна: 26 000 грн</p>
+                <a href="#кубічний-акваріум">Детальніше</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Деталі товарів -->
+    <section id="білий-дах" class="details">
+        <h2>Білий Дах</h2>
+        <img src="file:///C:/Users/shumivodnik2.0/Downloads/Telegram%20Desktop/comp3.jpg" alt="Білий Дах" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <ul>
+            <li>Процесор: Intel i5-14600K</li>
+            <li>Відеокарта: NVIDIA GeForce RTX 4060 Ti 12 ГБ</li>
+            <li>Накопичувач: M.2 NVMe SSD 1 ТБ (Crucial)</li>
+            <li>Блок живлення: AZA 650W (Bronze)</li>
+        </ul>
+        <a href="#products">Повернутися до товарів</a>
+    </section>
+
+    <section id="чорний-маг" class="details">
+        <h2>Чорний Маг</h2>
+        <img src="file:///C:/Users/shumivodnik2.0/Downloads/Telegram%20Desktop/compua22.jpg" alt="Чорний Маг" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <ul>
+            <li>Процесор: AMD Ryzen 7 7800X3D</li>
+            <li>Відеокарта: NVIDIA GeForce RTX 3080 Ti 12 ГБ</li>
+            <li>Накопичувач: M.2 NVMe SSD 1 ТБ (Crucial)</li>
+            <li>Блок живлення: AZA 650W (Bronze)</li>
+        </ul>
+        <a href="#products">Повернутися до товарів</a>
+    </section>
+
+    <section id="кубічний-акваріум" class="details">
+        <h2>Кубічний Акваріум</h2>
+        <img src="file:///C:/Users/shumivodnik2.0/Downloads/Telegram%20Desktop/compua.jpg" alt="Кубічний Акваріум" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <ul>
+            <li>Процесор: Intel i9-14600K</li>
+            <li>Відеокарта: NVIDIA GeForce RTX 4080 Super 16 ГБ</li>
+            <li>Накопичувач: 2 x M.2 NVMe SSD 1 ТБ (Crucial)</li>
+            <li>Охолодження: ID Cooling SWO 360 (рідке)</li>
+            <li>Блок живлення: AZA 650W (Bronze)</li>
+        </ul>
+        <a href="#products">Повернутися до товарів</a>
+    </section>
+
+    <section id="contact">
+        <h2>Контакти</h2>
+        <p>Зв'яжіться з нами:</p>
+        <p>Телефон: <a href="tel:+38098777777">+380 98 777 777</a></p>
+        <p>Email: <a href="mailto:shopuacomp@gmail.com">shopuacomp@gmail.com</a></p>
+    </section>
+<section id="support">
+        <h2>Підтримка</h2>
+        <div class="support-form">
+            <form>
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="email" placeholder="Ваш email" required>
+                <textarea placeholder="Ваше повідомлення" rows="5" required></textarea>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="share-link">
+        <h3>Поділитися посиланням на сайт:</h3>
+        <input type="text" id="share-url" value="https://компшоп.ua" readonly>
+        <button onclick="copyLink()">Копіювати</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Компшоп. Всі права захищені.</p>
+    </footer>
+
+    <script>
+        function copyLink() {
+            const input = document.getElementById('share-url');
+            input.select();
+            document.execCommand('copy');
+            alert('Посилання скопійовано!');
+        }
+    </script>
+</body>
+</html>	
